@@ -53,7 +53,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
@@ -68,6 +68,8 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.25s ease, color 0.25s ease;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 h1, h2, h3 { font-family: var(--font-mono); margin: 0; letter-spacing: -0.01em; }
@@ -622,7 +624,10 @@ img { max-width: 100%; display: block; }
 @media (max-width: 860px) {
   .nav__links {
     position: fixed;
-    inset: var(--nav-h) 0 0 0;
+    top: var(--nav-h);
+    right: 0;
+    bottom: 0;
+    width: min(100%, 320px);
     height: calc(100vh - var(--nav-h));
     background: var(--bg);
     flex-direction: column;
