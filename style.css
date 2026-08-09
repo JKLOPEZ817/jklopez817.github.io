@@ -440,7 +440,6 @@ img { max-width: 100%; display: block; }
 }
 .project-card__learned { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 .project-card__learned strong { color: var(--text); }
-.project-card--placeholder { border-style: dashed; opacity: 0.7; }
 
 .internship-note {
   background: var(--surface);

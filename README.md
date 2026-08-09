@@ -97,16 +97,17 @@ GitHub Pages redeploys automatically on every push to `main`, usually within a m
 
 ## Content I Still Need to Fill In
 
-One placeholder remains — search `index.html` for:
+Nothing is currently showing as a placeholder on the live site — the two real projects (COE-PAY and
+Smart EDGE E-Receipt) plus the internship cover the Technical Experience section. Email, LinkedIn,
+phone, and programming languages are also filled in from my resume.
 
-- `[PROJECT NAME]` / `[DESCRIPTION]` / `[TECHNOLOGIES]` / `[WHAT I LEARNED]` — a placeholder project
-  card in the Technical Experience section; I'll duplicate the `.project-card` block for additional
-  real projects as I build them
+To add a new project later, open `index.html`, find the commented-out project template inside the
+Technical Experience section (search for "PROJECT TEMPLATE"), copy it, fill it in, and move it above
+the comment so it renders as a real `.project-card`.
 
-Email, LinkedIn, phone, and programming languages are already filled in from my resume. I left off
-personal details like date of birth, home address, height/weight, and civil status on purpose — they
-aren't relevant to a technical portfolio, and a full home address in particular shouldn't be published
-publicly.
+I left off personal details like date of birth, home address, height/weight, and civil status on
+purpose — they aren't relevant to a technical portfolio, and a full home address in particular
+shouldn't be published publicly.
 
 ## Future Improvements
 
