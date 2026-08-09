@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Kenneth Lopez | Computer Engineering Graduate &amp; Aspiring Full Stack Developer</title>
+<meta name="description" content="Personal portfolio of John Kenneth Lopez, a Computer Engineering graduate interested in software engineering and full-stack web development.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="John Kenneth Lopez | Computer Engineering Graduate & Aspiring Full Stack Developer">
+<meta property="og:description" content="Personal portfolio of John Kenneth Lopez, a Computer Engineering graduate interested in software engineering and full-stack web development.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jklopez817.github.io">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="site-header" id="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="#home" class="nav__brand">
+      <span class="nav__prompt">jkl@dev</span><span class="nav__tilde">:~$</span>
+    </a>
+
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Technical Experience</a></li>
+      <li><a href="#learning">Learning Path</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark theme" aria-pressed="false">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+      <a class="btn btn--ghost nav__github" href="https://github.com/JKLOPEZ817" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+
+    <button type="button" class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">// computer engineering graduate</p>
+        <h1 class="hero__name">John Kenneth Lopez</h1>
+        <p class="hero__title">Computer Engineering Graduate <span class="dot">·</span> Aspiring Full Stack Developer</p>
+        <p class="hero__desc">
+          Computer Engineering graduate with hands-on experience in web development, programming, and technical
+          problem-solving. Currently focused on strengthening my full-stack development skills and learning how
+          modern software applications are built, tested, deployed, and maintained.
+        </p>
+        <div class="hero__actions">
+          <a href="#skills" class="btn btn--primary">View My Skills</a>
+          <a href="#contact" class="btn btn--secondary">Contact Me</a>
+          <a href="https://github.com/JKLOPEZ817" target="_blank" rel="noopener" class="btn btn--ghost">
+            View GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="terminal__dot"></span><span class="terminal__dot"></span><span class="terminal__dot"></span>
+            <span class="terminal__title">pipeline.sh</span>
+          </div>
+          <div class="terminal__body">
+            <p class="pipe-step" style="--i:0"><span class="pipe-tag">USER</span></p>
+            <p class="pipe-arrow" style="--i:1">│</p>
+            <p class="pipe-step" style="--i:2"><span class="pipe-tag">FRONTEND</span><span class="pipe-note">HTML · CSS · JS</span></p>
+            <p class="pipe-arrow" style="--i:3">│</p>
+            <p class="pipe-step" style="--i:4"><span class="pipe-tag">REST API</span></p>
+            <p class="pipe-arrow" style="--i:5">│</p>
+            <p class="pipe-step" style="--i:6"><span class="pipe-tag">BACKEND</span></p>
+            <p class="pipe-arrow" style="--i:7">│</p>
+            <p class="pipe-step" style="--i:8"><span class="pipe-tag">DATABASE</span><span class="pipe-note">SQL</span></p>
+            <p class="terminal__cursor" style="--i:9"><span class="caret">▍</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__inner">
+      <p class="section__eyebrow">01 / about</p>
+      <h2 class="section__title">About Me</h2>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            I'm a fresh BS Computer Engineering graduate with hands-on experience in web development and
+            technical projects. Through coursework and independent work, I've spent real time writing code,
+            building interfaces, and troubleshooting problems end to end &mdash; not just studying them.
+          </p>
+          <p>
+            I'm interested in software engineering broadly, and particularly in full-stack development: I like
+            understanding how a request moves from a browser, through an API, into a backend, and back again.
+            I'm currently learning the professional practices around that &mdash; testing, deployment, CI/CD,
+            and application security &mdash; so I can turn my technical foundation into a professional
+            development career.
+          </p>
+        </div>
+        <div class="about__facts">
+          <div class="fact-card">
+            <span class="fact-card__label">Background</span>
+            <span class="fact-card__value">BS Computer Engineering</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-card__label">Focus</span>
+            <span class="fact-card__value">Full Stack Development</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-card__label">Based in</span>
+            <span class="fact-card__value">Naga City, Camarines Sur, PH</span>
+          </div>
+          <div class="fact-card">
+            <span class="fact-card__label">Status</span>
+            <span class="fact-card__value">Open to opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section section--alt" id="skills">
+    <div class="section__inner">
+      <p class="section__eyebrow">02 / skills</p>
+      <h2 class="section__title">Skills</h2>
+      <p class="section__lede">Technologies I have hands-on experience with.</p>
+
+      <div class="skills__grid">
+        <div class="skill-group">
+          <h3 class="skill-group__title">Web Development</h3>
+          <ul class="tag-list">
+            <li class="tag">HTML</li>
+            <li class="tag">CSS</li>
+            <li class="tag">JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Programming Languages</h3>
+          <ul class="tag-list">
+            <li class="tag">Python</li>
+            <li class="tag">C</li>
+            <li class="tag">Java</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Tools</h3>
+          <ul class="tag-list">
+            <li class="tag">Git</li>
+            <li class="tag">GitHub</li>
+            <li class="tag">Visual Studio Code</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Database</h3>
+          <ul class="tag-list">
+            <li class="tag">SQL</li>
+            <li class="tag">Relational Database Fundamentals</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Practices</h3>
+          <ul class="tag-list">
+            <li class="tag">Software Testing &amp; QA</li>
+            <li class="tag">Debugging</li>
+            <li class="tag">Technical Documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECHNICAL EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <div class="section__inner">
+      <p class="section__eyebrow">03 / technical experience</p>
+      <h2 class="section__title">Technical Experience</h2>
+      <p class="section__lede">
+        My technical experience so far has primarily come from academic work, hands-on web development,
+        technical projects, programming practice, and independent learning &mdash; alongside a short internship
+        that gave me a first look at software engineering in a professional setting.
+      </p>
+
+      <div class="strength-strip">
+        <span class="tag tag--muted">Programming</span>
+        <span class="tag tag--muted">Web Development</span>
+        <span class="tag tag--muted">Troubleshooting</span>
+        <span class="tag tag--muted">Debugging</span>
+        <span class="tag tag--muted">Hardware/Software Interaction</span>
+        <span class="tag tag--muted">Technical Problem Solving</span>
+        <span class="tag tag--muted">Independent Learning</span>
+      </div>
+
+      <div class="projects">
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <h3>COE-PAY</h3>
+            <span class="project-card__type">Capstone / Thesis Project</span>
+          </div>
+          <p class="project-card__desc">
+            An automated payment kiosk system built as my Computer Engineering capstone project. The system
+            handles hardware coin acceptance and pairs a Python backend with an HTML, CSS, and JavaScript
+            frontend, backed by a MongoDB / SQLite data layer.
+          </p>
+          <ul class="project-card__tech">
+            <li>Python</li><li>HTML/CSS/JS</li><li>MongoDB</li><li>SQLite</li>
+            <li>AES-256-GCM Encryption</li><li>RBAC</li><li>2FA</li>
+          </ul>
+          <p class="project-card__learned">
+            <strong>What I learned:</strong> designing role-based access control across a five-level role
+            hierarchy, integrating hardware input with application logic, and applying encryption and
+            two-factor authentication to protect a real, hardware-connected system.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__head">
+            <h3>Smart EDGE E-Receipt</h3>
+            <span class="project-card__type">Personal Project</span>
+          </div>
+          <p class="project-card__desc">
+            An HTML e-receipt email template built for Smart EDGE Engineering Review Specialist, a CPE
+            certification exam review center.
+          </p>
+          <ul class="project-card__tech">
+            <li>HTML</li><li>Email Templating</li>
+          </ul>
+          <p class="project-card__learned">
+            <strong>What I learned:</strong> the constraints of building layouts that render consistently
+            across email clients, which behave very differently from a normal browser.
+          </p>
+        </article>
+
+        <!-- PROJECT PLACEHOLDER — duplicate this block for future projects -->
+        <article class="project-card project-card--placeholder">
+          <div class="project-card__head">
+            <h3>[PROJECT NAME]</h3>
+            <span class="project-card__type">Project Placeholder</span>
+          </div>
+          <p class="project-card__desc">[DESCRIPTION]</p>
+          <ul class="project-card__tech"><li>[TECHNOLOGIES]</li></ul>
+          <p class="project-card__learned"><strong>What I learned:</strong> [WHAT I LEARNED]</p>
+        </article>
+
+      </div>
+
+      <div class="internship-note">
+        <div class="internship-note__head">
+          <h3>Software Engineering Intern</h3>
+          <span class="internship-note__meta">Pixel8 Web Solutions and Consultancy Inc. &middot; Legaspi City, Albay &middot; July 2025</span>
+        </div>
+        <ul class="internship-note__list">
+          <li>Worked alongside a professional development team in a fast-paced environment, building on client-oriented problem-solving.</li>
+          <li>Diagnosed and documented software issues, working through escalated technical concerns methodically.</li>
+          <li>Produced technical documentation and system testing reports.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DEVELOPMENT PATH ============ -->
+  <section class="section section--alt" id="learning">
+    <div class="section__inner">
+      <p class="section__eyebrow">04 / learning path</p>
+      <h2 class="section__title">Current Learning &amp; Development Path</h2>
+      <p class="section__lede">
+        This is not professional experience &mdash; it's the roadmap I'm actively working through to understand
+        the full software-development lifecycle, end to end.
+      </p>
+
+      <div class="path">
+        <div class="path__step">
+          <span class="path__num">01</span>
+          <h3>Frontend</h3>
+          <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive Design</li></ul>
+        </div>
+        <div class="path__step">
+          <span class="path__num">02</span>
+          <h3>Backend</h3>
+          <ul><li>Server-side Development</li><li>REST APIs</li><li>Authentication</li></ul>
+        </div>
+        <div class="path__step">
+          <span class="path__num">03</span>
+          <h3>Database</h3>
+          <ul><li>SQL</li><li>Database Design</li><li>CRUD</li><li>Data Integrity</li></ul>
+        </div>
+        <div class="path__step">
+          <span class="path__num">04</span>
+          <h3>Software Engineering</h3>
+          <ul><li>Testing</li><li>Debugging</li><li>Code Review</li><li>Security</li></ul>
+        </div>
+        <div class="path__step">
+          <span class="path__num">05</span>
+          <h3>System Integration</h3>
+          <ul><li>External APIs</li><li>Frontend ↔ Backend</li><li>API Documentation</li></ul>
+        </div>
+        <div class="path__step">
+          <span class="path__num">06</span>
+          <h3>Deployment</h3>
+          <ul><li>Git</li><li>CI/CD</li><li>Deployment</li><li>Monitoring</li><li>Maintenance</li></ul>
+        </div>
+      </div>
+
+      <h3 class="learning-heading">Learning / Developing</h3>
+      <ul class="tag-list tag-list--learning">
+        <li class="tag tag--learning">REST APIs</li>
+        <li class="tag tag--learning">Backend Development</li>
+        <li class="tag tag--learning">Authentication &amp; Authorization</li>
+        <li class="tag tag--learning">System Integration</li>
+        <li class="tag tag--learning">Automated Testing</li>
+        <li class="tag tag--learning">Integration Testing</li>
+        <li class="tag tag--learning">Application Security</li>
+        <li class="tag tag--learning">Deployment</li>
+        <li class="tag tag--learning">CI/CD</li>
+        <li class="tag tag--learning">Production Maintenance</li>
+        <li class="tag tag--learning">API Documentation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ BEYOND BUILDING WEBSITES ============ -->
+  <section class="section" id="beyond">
+    <div class="section__inner">
+      <p class="section__eyebrow">05 / beyond building websites</p>
+      <h2 class="section__title">Beyond Building Websites</h2>
+
+      <div class="cards-grid">
+        <div class="info-card">
+          <h3>System Integration</h3>
+          <p>Connecting frontend applications, backend services, APIs, databases, and external services.</p>
+        </div>
+        <div class="info-card">
+          <h3>Testing &amp; Quality</h3>
+          <p>Learning unit testing, integration testing, debugging, and reliable software practices.</p>
+        </div>
+        <div class="info-card">
+          <h3>Deployment</h3>
+          <p>Understanding how applications move from development environments into production.</p>
+        </div>
+        <div class="info-card">
+          <h3>CI/CD</h3>
+          <p>Learning automated workflows for testing, building, and deploying software.</p>
+        </div>
+        <div class="info-card">
+          <h3>Security</h3>
+          <p>Developing an understanding of authentication, authorization, validation, and secure application design.</p>
+        </div>
+        <div class="info-card">
+          <h3>Maintenance</h3>
+          <p>Learning how production applications are monitored, debugged, updated, and improved.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STRENGTHS ============ -->
+  <section class="section section--alt">
+    <div class="section__inner">
+      <p class="section__eyebrow">06 / strengths</p>
+      <h2 class="section__title">Strengths</h2>
+
+      <div class="cards-grid">
+        <div class="info-card">
+          <h3>Problem Solving</h3>
+          <p>Breaking technical problems into manageable parts and working toward practical solutions.</p>
+        </div>
+        <div class="info-card">
+          <h3>Troubleshooting</h3>
+          <p>Investigating technical problems systematically rather than relying on guesswork.</p>
+        </div>
+        <div class="info-card">
+          <h3>Technical Curiosity</h3>
+          <p>Interested in understanding how technologies and systems work.</p>
+        </div>
+        <div class="info-card">
+          <h3>Independent Learning</h3>
+          <p>Comfortable learning unfamiliar concepts and technologies independently.</p>
+        </div>
+        <div class="info-card">
+          <h3>Systems Thinking</h3>
+          <p>Computer Engineering background provides an understanding of how different technical components interact.</p>
+        </div>
+        <div class="info-card">
+          <h3>Adaptability</h3>
+          <p>Willing to learn new technologies, tools, and professional development practices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <div class="section__inner">
+      <p class="section__eyebrow">07 / education</p>
+      <h2 class="section__title">Education</h2>
+
+      <div class="education-card">
+        <div>
+          <h3>Bachelor of Science in Computer Engineering</h3>
+          <p class="education-card__school">Naga College Foundation, Inc. (NCF) &mdash; Naga City, Camarines Sur</p>
+          <p class="education-card__grad">Graduated June 2026</p>
+        </div>
+        <p>
+          My Computer Engineering background provided me with exposure to programming, systems, hardware,
+          software, troubleshooting, and technical problem-solving.
+        </p>
+      </div>
+
+      <div class="cert-note">
+        <h3>Certifications</h3>
+        <ul class="cert-list">
+          <li>
+            <span class="cert-list__name">Certified Cloud System Analyst</span>
+            <span class="cert-list__meta">East West International Educational Specialist, Inc. &middot; May 2025</span>
+          </li>
+          <li>
+            <span class="cert-list__name">Safety Officer II (DOLE-Accredited)</span>
+            <span class="cert-list__meta">Think Safe Training, Consultancy and Service Corporation &middot; March 2025</span>
+          </li>
+        </ul>
+      </div>
+
+      <p class="education-footnote">Also completed Senior High School (STEM), Naga College Foundation, Inc., graduating With Honor.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHY SOFTWARE DEVELOPMENT ============ -->
+  <section class="section section--alt">
+    <div class="section__inner section__inner--narrow">
+      <p class="section__eyebrow">08 / why software</p>
+      <h2 class="section__title">Why Software Development?</h2>
+      <p class="prose-lg">
+        My Computer Engineering background introduced me to both hardware and software, but I became
+        particularly interested in building and solving problems through software. I enjoy understanding how
+        systems work, troubleshooting issues, and turning ideas into working applications. I want to continue
+        developing these skills through real-world software development.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ GITHUB ============ -->
+  <section class="section" id="github">
+    <div class="section__inner">
+      <p class="section__eyebrow">09 / github</p>
+      <h2 class="section__title">GitHub</h2>
+      <div class="github-card">
+        <div class="github-card__text">
+          <p>
+            I'm using GitHub to organize my development work, document what I'm learning, and build a growing
+            portfolio of software projects. It's early &mdash; this is the beginning of my public development
+            portfolio, not a finished one.
+          </p>
+          <p class="github-card__username">@JKLOPEZ817</p>
+        </div>
+        <a href="https://github.com/JKLOPEZ817" target="_blank" rel="noopener" class="btn btn--primary">
+          View GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAREER OBJECTIVE ============ -->
+  <section class="section section--alt">
+    <div class="section__inner section__inner--narrow">
+      <p class="section__eyebrow">10 / career objective</p>
+      <h2 class="section__title">Career Objective</h2>
+      <p class="prose-lg">
+        I am looking for an opportunity to begin my professional career in software development, contribute to
+        real-world applications, learn from experienced developers, and continuously strengthen my skills as I
+        grow into a well-rounded software engineer.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="section__inner">
+      <p class="section__eyebrow">11 / contact</p>
+      <h2 class="section__title">Let's Connect</h2>
+      <p class="section__lede">
+        I'm currently looking for opportunities to begin my professional career in software development and
+        continue growing as a developer.
+      </p>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:jklopez8177@gmail.com">
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value">jklopez8177@gmail.com</span>
+        </a>
+        <a class="contact-card" href="https://github.com/JKLOPEZ817" target="_blank" rel="noopener">
+          <span class="contact-card__label">GitHub</span>
+          <span class="contact-card__value">github.com/JKLOPEZ817</span>
+        </a>
+        <a class="contact-card" href="https://linkedin.com/in/jklopez8177" target="_blank" rel="noopener">
+          <span class="contact-card__label">LinkedIn</span>
+          <span class="contact-card__value">linkedin.com/in/jklopez8177</span>
+        </a>
+        <a class="contact-card" href="tel:+639673316515">
+          <span class="contact-card__label">Phone</span>
+          <span class="contact-card__value">+63 967 331 6515</span>
+        </a>
+        <div class="contact-card contact-card--static">
+          <span class="contact-card__label">Location</span>
+          <span class="contact-card__value">Naga City, Camarines Sur, Philippines</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__copy">&copy; 2026 John Kenneth Lopez</p>
+    <p class="footer__role">Computer Engineering Graduate &middot; Aspiring Full Stack Developer</p>
+    <a href="https://github.com/JKLOPEZ817" target="_blank" rel="noopener" class="footer__github" aria-label="GitHub profile">
+      <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
